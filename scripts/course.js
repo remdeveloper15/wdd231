@@ -3,8 +3,8 @@ const courses = [
   { id: 2, code: "WDD 131", title: "Dynamic Web Fundamentals", credits: 2, type: "WDD", completed: true  },
   { id: 3, code: "WDD 231", title: "Frontend Web Dev I",       credits: 3, type: "WDD", completed: false },
   { id: 4, code: "CSE 110", title: "Introduction to Programming",     credits: 2, type: "CSE", completed: true  },
-  { id: 5, code: "CSE 111", title: "Programming with Functions",      credits: 3, type: "CSE", completed: false },
-  { id: 6, code: "CSE 210", title: "Programming with Classes",        credits: 3, type: "CSE", completed: false },
+  { id: 5, code: "CSE 111", title: "Programming with Functions",      credits: 3, type: "CSE", completed: true },
+  { id: 6, code: "CSE 210", title: "Programming with Classes",        credits: 3, type: "CSE", completed: true },
 ];
 
 const grid = document.getElementById('course-grid');
