@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 64 64" role="img" aria-label="HF Logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#536dfe"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="url(#g)"/>
+  <path d="M18 44V20h4v9h10v-9h4v24h-4v-11H22v11h-4zm31-1h-9V21h9v3h-6v6h5v3h-5v7h6v3z" fill="#fff"/>
+</svg>

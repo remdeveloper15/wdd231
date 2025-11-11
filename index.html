@@ -1,20 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8" />
+  <title>WDD 231 · Helaman Franco · Course Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WDD 231 Course Home Page · Responsive, accessible, and SEO-friendly layout with dynamic course cards and navigation." />
+  <meta name="author" content="Helaman Franco" />
+
+  <!-- Google Font: usa una sola familia -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS: normalize -> small -> larger (larger contiene media query) -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- JS con defer para no bloquear el parseo -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <header>
-        <p>Hola!!</p>
-    </header>
-    <main>
+    
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Site logo" width="48" height="48" />
+      <span class="site-name">Helaman Franco</span>
+    </div>
 
-    </main>
-    <footer>
-        
-    </footer>
+    <!-- Botón hamburguesa accesible en móviles -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Home</h1>
+
+    <section aria-labelledby="cert-title" class="panel">
+      <h2 id="cert-title">Certificate: Web &amp; Computer Programming</h2>
+
+      <!-- Filtros -->
+      <div class="filters" role="group" aria-label="Filter courses">
+        <button class="filter-btn is-selected" data-filter="all">All Courses</button>
+        <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+        <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+      </div>
+
+      <!-- Contador de créditos dinámico -->
+      <p class="credits"><strong>Total credits:</strong> <span id="credit-total">0</span></p>
+
+      <!-- Contenedor dinámico de tarjetas -->
+      <div id="course-grid" class="course-grid" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="about-title" class="panel">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I'm Helaman, a Software Development student at BYU-Idaho (from Ecuador). This page demonstrates
+        responsive design, accessibility, and dynamic content with modern web standards.
+      </p>
+    </section>
+
+    <section aria-labelledby="resources-title" class="panel">
+      <h2 id="resources-title">Resources</h2>
+      <ul class="resource-list">
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://web.dev/measure/" target="_blank" rel="noopener">web.dev Measure</a></li>
+        <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="socials" aria-label="Social links">
+      <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="images/github.svg" width="24" height="24" alt="github">
+      <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" width="20" height="20" alt="linkedin">
+      </a>
+    </div>
+
+    <p>
+      &copy; <span id="current-year"></span> · <span class="owner">Helaman Franco</span> · <span class="location">Ecuador</span>
+    </p>
+    <p id="lastModified" aria-label="Page last modified date"></p>
+  </footer>
+
 </body>
 </html>

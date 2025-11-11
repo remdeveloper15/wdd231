@@ -1,0 +1,37 @@
+/* Vista >= 700px */
+@media (min-width: 700px){
+  .site-header{
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .menu-toggle{ display:none; }
+
+  .site-nav{
+    display:block; grid-column:auto;
+  }
+  .site-nav ul{
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .site-nav a{
+    border-top: none;
+    padding: 1rem .9rem;
+  }
+  .site-nav a:hover{
+    background: transparent;
+    box-shadow: inset 0 -2px 0 var(--brand); /* hover sin brincar altura */
+  }
+
+  /* Grid de cursos a 2-3 columnas */
+  .course-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Vista >= 1000px: 3 columnas en cursos */
+@media (min-width: 1000px){
+  .course-grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
