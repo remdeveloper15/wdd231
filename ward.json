@@ -1,0 +1,12 @@
+{
+    "familyName": "Franco Reyes",
+    "movedDate": "November 2, 2025",
+    "number": 4,
+    "visited": true,
+    "members": [
+        {"name": "Orlando Franco", "gender": "M", "birthdate": "November 17, 1973"},
+        {"name": "Lourdes Reyes", "gender": "F", "birthdate": "September 11, 1969"},
+        {"name": "Alan Franco", "gender": "M", "birthdate": "December 12, 2002"},
+        {"name": "Christopher Franco", "gender": "M", "birthdate": "August 16, 2004"}
+    ]
+}
