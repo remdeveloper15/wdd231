@@ -5,7 +5,7 @@
       "address": "Calle 1 y Av. Anconcito, San José de Ancón",
       "phone": "+593 99 111 2222",
       "website": "https://example.com/sol-andino",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/bakery.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/tree/main/chamber/images/bakery.svg",
       "membershipLevel": 3,
       "description": "Panadería artesanal con panes calientes todas las mañanas."
     },
@@ -14,7 +14,7 @@
       "address": "Malecón Costanero S/N, San José de Ancón",
       "phone": "+593 99 333 4444",
       "website": "https://example.com/ancon-sea-view",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/hotel.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/chamber/images/hotel.svg",
       "membershipLevel": 3,
       "description": "Hotel con vista al mar, ideal para familias y turistas."
     },
@@ -23,7 +23,7 @@
       "address": "Av. Principal 12-34, San José de Ancón",
       "phone": "+593 99 555 6666",
       "website": "https://example.com/ecotours-ancon",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/tours.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/chamber/images/tours.svg",
       "membershipLevel": 2,
       "description": "Operador turístico local especializado en rutas ecológicas."
     },
@@ -32,7 +32,7 @@
       "address": "Barrio Central, junto al parque, San José de Ancón",
       "phone": "+593 99 777 8888",
       "website": "https://example.com/ferreteria-elfaro",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/tours.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/chamber/images/tours.svg",
       "membershipLevel": 1,
       "description": "Materiales de construcción, herramientas y servicios de instalación."
     },
@@ -41,7 +41,7 @@
       "address": "Oficina 3, Centro Comercial Ancón Plaza",
       "phone": "+593 99 222 3344",
       "website": "https://example.com/anconcito-tech",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/tech.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/chamber/images/tech.svg",
       "membershipLevel": 2,
       "description": "Soporte técnico, redes y soluciones para pequeñas empresas."
     },
@@ -50,7 +50,7 @@
       "address": "Frente al muelle pesquero, San José de Ancón",
       "phone": "+593 99 112 2334",
       "website": "https://example.com/mar-azul",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/restaurant.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/chamber/images/restaurant.svg",
       "membershipLevel": 3,
       "description": "Comida típica costeña, pescados y mariscos frescos."
     },
@@ -59,7 +59,7 @@
       "address": "Esquina de la Iglesia, San José de Ancón",
       "phone": "+593 99 445 5566",
       "website": "https://example.com/salud-vida",
-      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/images/drug.svg",
+      "logo": "https://github.com/remdeveloper15/wdd231/blob/main/chamber/images/drug.svg",
       "membershipLevel": 1,
       "description": "Medicamentos, primeros auxilios y orientación farmacéutica."
     }
