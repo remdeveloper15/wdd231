@@ -2,8 +2,8 @@
     --bg: #fafafa;
     --text-color: #222;
     --fg: #0f172a;
-    --brand: #536dfe;   /* primario */
-    --brand-2: #e8eaff; /* sutil */
+    --brand: black;   /* primario */
+    --brand-2: #D9D9D9; /* sutil */
     --border: #e5e7eb;
     --space: clamp(0.75rem, 1.5vw, 1rem);   
     --space-lg: clamp(1rem, 2vw, 1.5rem);
