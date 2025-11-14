@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Sol Andino Bakery",
+      "address": "Calle 1 y Av. Anconcito, San José de Ancón",
+      "phone": "+593 99 111 2222",
+      "website": "https://example.com/sol-andino",
+      "logo": "",
+      "membershipLevel": 3,
+      "description": "Panadería artesanal con panes calientes todas las mañanas."
+    },
+    {
+      "name": "Ancón Sea View Hotel",
+      "address": "Malecón Costanero S/N, San José de Ancón",
+      "phone": "+593 99 333 4444",
+      "website": "https://example.com/ancon-sea-view",
+      "logo": "ancon-sea-view-hotel.webp",
+      "membershipLevel": 3,
+      "description": "Hotel con vista al mar, ideal para familias y turistas."
+    },
+    {
+      "name": "EcoTours Ancón",
+      "address": "Av. Principal 12-34, San José de Ancón",
+      "phone": "+593 99 555 6666",
+      "website": "https://example.com/ecotours-ancon",
+      "logo": "ecotours-ancon.webp",
+      "membershipLevel": 2,
+      "description": "Operador turístico local especializado en rutas ecológicas."
+    },
+    {
+      "name": "Ferretería El Faro",
+      "address": "Barrio Central, junto al parque, San José de Ancón",
+      "phone": "+593 99 777 8888",
+      "website": "https://example.com/ferreteria-elfaro",
+      "logo": "ferreteria-el-faro.webp",
+      "membershipLevel": 1,
+      "description": "Materiales de construcción, herramientas y servicios de instalación."
+    },
+    {
+      "name": "Anconcito Tech Solutions",
+      "address": "Oficina 3, Centro Comercial Ancón Plaza",
+      "phone": "+593 99 222 3344",
+      "website": "https://example.com/anconcito-tech",
+      "logo": "anconcito-tech-solutions.webp",
+      "membershipLevel": 2,
+      "description": "Soporte técnico, redes y soluciones para pequeñas empresas."
+    },
+    {
+      "name": "Restaurante Mar Azul",
+      "address": "Frente al muelle pesquero, San José de Ancón",
+      "phone": "+593 99 112 2334",
+      "website": "https://example.com/mar-azul",
+      "logo": "restaurante-mar-azul.webp",
+      "membershipLevel": 3,
+      "description": "Comida típica costeña, pescados y mariscos frescos."
+    },
+    {
+      "name": "Farmacia Salud & Vida",
+      "address": "Esquina de la Iglesia, San José de Ancón",
+      "phone": "+593 99 445 5566",
+      "website": "https://example.com/salud-vida",
+      "logo": "farmacia-salud-vida.webp",
+      "membershipLevel": 1,
+      "description": "Medicamentos, primeros auxilios y orientación farmacéutica."
+    }
+  ]
+}
