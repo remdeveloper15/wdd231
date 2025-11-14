@@ -26,11 +26,11 @@ function createMemberCard(member) {
   logoWrapper.classList.add("member-logo-wrapper");
 
   const img = document.createElement("img");
-  img.src = `images/members/${member.logo}`;
+  img.src = `images/${member.logo}`;
   img.alt = `Logo of ${member.name}`;
   img.loading = "lazy";
-  img.width = 120;
-  img.height = 120;
+  img.width = 50;
+  img.height = 50;
   logoWrapper.appendChild(img);
 
   const content = document.createElement("div");

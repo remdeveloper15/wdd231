@@ -20,7 +20,8 @@ body {
     height: 100%; 
 }
 
-body {
+body,
+footer{
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     color: var(--fg);
     background: var(--bg);  
