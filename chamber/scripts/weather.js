@@ -7,7 +7,7 @@ const hum = document.querySelector("#hum");
 const sunrise = document.querySelector("#sunrise");
 const sunset = document.querySelector("#sunset")
 const image = document.querySelector("#weather-icon");
-const caption = document.querySelector("figcaption");
+const caption = document.querySelector("#fig");
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=-2.2268097624921386&lon=-80.86124186137998&units=metric&appid=6f01ef6e8c0efc3c775086f6fb50cde3";
 
 const f1 = document.querySelector("#f1");
