@@ -260,7 +260,7 @@ main {
     gap: 12px;
 }
 
-#multi h3 {
+#multi h2 {
     background-color: var(--border);
     padding: 10px;
 }
@@ -337,7 +337,7 @@ body.dark-theme .member-logo-wrapper {
 }
 
 /* Contenido de la tarjeta */
-.member-content h3 {
+.member-content h2 {
     margin: 0;
     font-size: 1.05rem;
 }
