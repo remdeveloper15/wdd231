@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Franco">
+    <meta name="description" content="San Jose de Ancon Chamber of Commerce Official Website | Home Page.">
+    
+    <!-- Title -->
+    <title>San Jose de Ancón Chamber of Comerce | Home </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"  href="images/ancon-chamber-logo.ico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="San Jose de Ancon Chamber of Commerce Web Site | Home Page.">
+    <meta property="og:description" content="San Jose de Ancon Chamber of Commerce Official Website | Home Page.">
+    <meta property="og:image" content="https://remdeveloper15.github.io/wdd231/chamber/images/ancon-chamber.png">
+    <meta property="og:url" content="https://remdeveloper15.github.io/wdd231/chamber/directory.html">
+
+    <!-- X Meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="San Jose de Ancon Chamber of Commerce Web Site | Home Page.">
+    <meta name="twitter:description" content="San Jose de Ancon Chamber of Commerce Official Website | Home Page.">
+    <meta name="twitter:image" content="https://remdeveloper15.github.io/wdd231/chamber/images/ancon-chamber.png">
+
+    <!-- CSS Reference -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile-index.css">
+    <link rel="stylesheet" href="styles/desktop-index.css">
+
+    <!-- JS Reference-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/theme-toggle.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="brand-header">
+            <img src="images/ancon-chamber-logo.ico" alt="Site logo" width="48" height="48">
+            <div class="title-header">
+                <span class="site-name-header">
+                    San Jose de Ancón
+                </span>
+                <span class="site-name-header">
+                    Chamber of Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="brand-header-2">
+            <!-- Botón modo claro/oscuro -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Activar modo oscuro">
+                <span class="theme-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Botón hamburguesa accesible en móviles -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li>
+                    <a href="index.html" aria-current="page" class="active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="directory.html">
+                        Directory
+                    </a>
+                </li>
+                <li>
+                    <a href="join.html">
+                        Join
+                    </a>
+                </li>
+                <li>
+                    <a href="discover.html">
+                        Discover
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ---------------MAIN--------------- -->
+    <main>
+        <!-- Hero Section-->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    Welcome to San Jose de Ancón Chamber of Commerce Website.
+                </h1>
+                <p>
+                    <a href="join.html" class="hero-button"> 
+                        Learn more
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Multi Section -->
+         <section >
+            <h1>
+                Home
+            </h1>
+            <div id="multi">
+                <div id="events">
+                    <h2>
+                        Events
+                    </h2>
+                    <p>◉ Enbollado con Polaca Night - Central Ward - November 27th - 4:00 pm
+                    </p>
+                    <p>
+                        ◉ Sleep Over Real - Princess Sophia House - December 12th, 7:00 pm
+                    </p>
+                    <p>
+                        ◉ Bellaqueo Intenso - Queen Isabel Palace - December 1st, 10:00 am
+                    </p>
+                </div>
+                <div>
+                    <h2>
+                        Current Weather
+                    </h2>
+                    <div id="weather">
+                        <div>
+                            <figure>
+                                <img id="weather-icon" src="" alt="">
+                            </figure>
+                        </div>
+                        <div>
+                            <span id="temp">
+                            </span>
+                            <figcaption>
+                            </figcaption>
+                            <span id="state">
+                            </span>
+                            <span id="high">    
+                            </span>
+                            <span id="low">
+                            </span>
+                            <span id="hum">
+                            </span>
+                            <span id="sunrise">
+                            </span>
+                            <span id="sunset"> 
+                            </span>
+                            </div>
+                    </div>
+                </div>
+                <div id="forecast">
+                    <h2>
+                        Weather Forecast
+                    </h2>
+                    <div id="forecast-sons">
+                        <span id="f1">
+                        </span>
+                        <span id="f2">
+                        </span>
+                        <span id="f3">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+        <!-- Members Section -->
+        <section id="members" aria-live="polite">
+
+        </section>
+    </main>
+    
+    <!-- ---------------FOOTER--------------- -->
+    <footer class="site-footer">
+        <div class="socials">
+            <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener"> 
+                <img src="images/github.svg" width="24" height="24" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" width="20" height="20" alt="linkedin">
+            </a>
+        </div>
+
+        <p>
+            &copy; 
+            <span id="current-year"></span> 
+                · 
+            <span class="owner">Helaman Franco</span> 
+                · 
+            <span class="location">Ecuador</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

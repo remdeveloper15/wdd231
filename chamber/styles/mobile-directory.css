@@ -1,0 +1,381 @@
+:root {
+    --bg: #fafafa;
+    --text-color: #222;
+    --fg: #0f172a;
+    --brand: black;   /* primario */
+    --brand-2: #D9D9D9; /* sutil */
+    --border: #e5e7eb;
+    --space: clamp(0.75rem, 1.5vw, 1rem);   
+    --space-lg: clamp(1rem, 2vw, 1.5rem);
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+html, 
+body { 
+    background-color: var(--bg);
+    color: var(--text-color);
+    height: 100%; 
+}
+
+body,
+footer{
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);  
+    line-height: 1.6;
+}
+
+a { 
+    color: var(--brand); 
+    text-decoration: none; 
+}
+
+a:focus-visible, 
+button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Header */
+.site-header{
+  position: sticky; top: 0; z-index: 1000;
+  background: var(--bg); 
+  border-bottom: 1px solid var(--border);
+  display: flex; 
+  flex-wrap: wrap;
+  gap: var(--space);
+  padding: .25rem var(--space);
+  align-items: center;
+  justify-content:flex-start;
+}
+
+.brand-header { 
+    display:flex; 
+    align-items:center; 
+    gap:.5rem; 
+}
+
+.brand-header img { 
+    width: 55px; 
+    height: 55px; 
+}
+
+.brand-header-2{
+    display: flex;
+    gap: var(--space);
+    align-items: center;
+    margin-left: auto;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-toggle {
+    appearance: none; 
+    border: none; 
+    background: transparent;
+    width: 44px; 
+    height: 44px; 
+    border-radius: 999px;
+}
+
+.menu-toggle:hover { 
+    background: var(--brand-2); 
+}
+
+.menu-icon {
+    display: inline-block; 
+    width: 20px; 
+    height: 2px; 
+    background: var(--fg); 
+    position: relative;
+}
+
+.menu-icon::before, 
+.menu-icon::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    width: 20px; 
+    height: 2px; 
+    background: var(--fg);
+    transition: transform .2s ease, top .2s ease, opacity .2s ease;
+}
+
+.menu-icon::before { 
+    top:-6px; 
+}
+
+.menu-icon::after { 
+    top:6px; 
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon{ background: transparent; }
+.menu-toggle[aria-expanded="true"] .menu-icon::before{ top:0; transform: rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-icon::after{ top:0; transform: rotate(-45deg); }
+
+body.dark-theme {
+    --bg: #0A0A0A;        /* fondo general */
+    --fg: #e5e7eb;        /* texto principal */
+    --text-color: #e5e7eb;
+    --border: #1f2937;
+    --brand: #e5e7eb;
+}
+
+/* Botón del toggle */
+.theme-toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icono, ahora será imagen */
+.theme-icon {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .15s ease;
+}
+
+/* Hover opcional */
+.theme-toggle:hover .theme-icon {
+    transform: scale(1.1);
+}
+
+/* Modo claro → sol */
+body:not(.dark-theme) .theme-icon {
+    background-image: url("../images/sun.svg");
+}
+
+/* Modo oscuro → luna */
+body.dark-theme .theme-icon {
+    background-image: url("../images/moon.svg");
+}
+
+
+/* Nav (mobile: oculto) */
+.site-nav { 
+    display: none; 
+}
+
+.site-nav.open { 
+    display: block; 
+    width: 100%;
+}
+
+.site-nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-nav a {   
+    display: block; 
+    padding: .9rem var(--space);
+    border-top: 1px solid var(--border);
+    transition: background-color .15s ease;
+}
+
+.site-nav a:hover { 
+    background: var(--brand-2); 
+}
+
+.site-nav a.active, 
+.site-nav a[aria-current="page"] {
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--brand);
+}
+
+/* Layout general del main del directorio */
+.directory-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space);
+}
+
+/* Encabezado del directorio */
+.directory-header {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: calc(var(--space-lg) + 0.5rem);
+}
+
+.directory-header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.directory-header p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* Controles de vista (grid / list) */
+.directory-controls {
+    margin-top: var(--space);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.directory-controls-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.directory-controls-buttons {
+    display: inline-flex;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.view-button {
+    border: none;
+    background: transparent;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--fg);
+}
+
+.view-button.is-active {
+    background: var(--brand-2);
+    font-weight: 600;
+}
+
+/* Contenedor de miembros */
+.members {
+    margin-top: var(--space-lg);
+    display: grid;
+    gap: var(--space);
+}
+
+/* Vista grid por defecto */
+.members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Vista lista: una sola columna */
+.members.list {
+    grid-template-columns: 1fr;
+}
+
+/* Card de miembro */
+.member-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space);
+    padding: var(--space);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    align-items: center;
+}
+
+/* En vista lista podemos cambiar el layout si quieres más compacto */
+.members.list .member-card {
+    grid-template-columns: auto 1fr;
+}
+
+/* Logo */
+.member-logo-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    background-color: #fff;
+}
+
+body.dark-theme .member-logo-wrapper {
+    background-color: #111;
+}
+
+.member-logo-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Contenido de la tarjeta */
+.member-content h2 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.member-level {
+    margin: 0.1rem 0 0.3rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+}
+
+.member-address,
+.member-phone,
+.member-description {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.member-description {
+    margin-top: 0.25rem;
+}
+
+.member-link-wrapper {
+    margin-top: 0.4rem;
+}
+
+.member-link-wrapper a {
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.site-footer{
+    border-top:1px solid var(--border);
+    margin-top: var(--space-lg);
+    padding: var(--space-lg) var(--space);
+    display:grid; 
+    gap:.75rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.socials { 
+    display:flex;
+    gap:.75rem; 
+}
+
+.socials a { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width:36px; 
+    height:36px; 
+    border-radius:999px; 
+    border:1px solid var(--border);
+}
+
+.socials a:hover{ 
+    background: var(--brand-2); 
+}

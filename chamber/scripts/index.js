@@ -17,7 +17,15 @@ function getMembershipLabel(level) {
   }
 }
 
+//Filter gold and silver members
+function getTopMembers(member) {
+    return member
+        .filter(m => m.membershipLevel === 3 || m.membershipLevel === 2) 
+        .slice(0, 3);
+}
+
 // Crea una card de negocio
+
 function createMemberCard(member) {
   const article = document.createElement("article");
   article.classList.add("member-card");
@@ -99,33 +107,20 @@ async function loadMembers() {
     }
     const data = await response.json();
     const members = data.members || [];
-    renderMembers(members);
+
+    //Filter just gold and silver members and just 3 of them
+    const topMember = getTopMembers(members);
+
+    //Load just only those 3 members
+    renderMembers(topMember);
+
   } catch (error) {
     console.error("Error loading members:", error);
     membersContainer.innerHTML = "<p>There was a problem loading the directory. Please try again later.</p>";
   }
 }
 
-// Toggle entre grid y list
-function setupViewToggle() {
-  viewButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      const view = button.dataset.view; // "grid" o "list"
-
-      membersContainer.classList.remove("grid", "list");
-      membersContainer.classList.add(view);
-
-      viewButtons.forEach(btn => {
-        const isActive = btn === button;
-        btn.classList.toggle("is-active", isActive);
-        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-      });
-    });
-  });
-}
-
 // Inicialización
 document.addEventListener("DOMContentLoaded", () => {
-  setupViewToggle();
   loadMembers();
 });

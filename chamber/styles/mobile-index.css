@@ -201,82 +201,108 @@ body.dark-theme .theme-icon {
 }
 
 /* Layout general del main del directorio */
-.directory-main {
+
+/* --------- MAIN --------- */ 
+
+main {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--space-lg) var(--space);
 }
 
-/* Encabezado del directorio */
-.directory-header {
-    display: grid;
-    gap: 0.5rem;
-    margin-top: calc(var(--space-lg) + 0.5rem);
-}
-
-.directory-header h1 {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.directory-header p {
-    margin: 0;
-    color: var(--text-color);
-}
-
-/* Controles de vista (grid / list) */
-.directory-controls {
-    margin-top: var(--space);
+/* Hero Image */
+.hero {
+    min-height: 60vh; 
+    background-image: url("../images/hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    color: var(--bg);
+    padding: 2rem;
 }
 
-.directory-controls-label {
-    font-size: 0.9rem;
-    opacity: 0.8;
+/* Hero Div */
+.hero-content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    border-radius: 12px;
 }
 
-.directory-controls-buttons {
-    display: inline-flex;
+.hero h1 {
+    font-size: clamp(2rem, 4w, 3rem);
+    margin-bottom: 0.75rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Button */
+.hero-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
     border-radius: 999px;
-    border: 1px solid var(--border);
-    overflow: hidden;
-}
-
-.view-button {
-    border: none;
-    background: transparent;
-    padding: 0.35rem 0.85rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    color: var(--fg);
-}
-
-.view-button.is-active {
-    background: var(--brand-2);
+    background-color: var(--fg);
+    color: var(--bg);
+    text-decoration: none;
     font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease; 
 }
+
+/* Multi Section */
+#multi {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+}
+
+#multi h2 {
+    background-color: var(--border);
+    padding: 10px;
+}
+
+#weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#weather figure {
+    margin: 0;
+    border: 0;
+    padding-right: 0px;
+}
+
+#weather span {
+    display: block;
+}
+
+#forecast span {
+    display: block;
+}
+
+#forecast-sons {
+    display: grid;
+    gap: 10 px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Member Section */
 
 /* Contenedor de miembros */
-.members {
+#members {
     margin-top: var(--space-lg);
     display: grid;
+    grid-template-columns: 1fr;
     gap: var(--space);
 }
 
-/* Vista grid por defecto */
-.members.grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-/* Vista lista: una sola columna */
-.members.list {
-    grid-template-columns: 1fr;
-}
-
-/* Card de miembro */
+/* Member Card */
 .member-card {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -286,11 +312,6 @@ body.dark-theme .theme-icon {
     border: 1px solid var(--border);
     background: var(--bg);
     align-items: center;
-}
-
-/* En vista lista podemos cambiar el layout si quieres más compacto */
-.members.list .member-card {
-    grid-template-columns: auto 1fr;
 }
 
 /* Logo */
@@ -347,6 +368,13 @@ body.dark-theme .member-logo-wrapper {
 .member-link-wrapper a {
     font-size: 0.9rem;
     text-decoration: underline;
+}
+
+.hero-button:hover {
+    background-color: var(--bg);
+    color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 
