@@ -201,7 +201,6 @@ body.dark-theme .theme-icon {
 }
 
 /* Layout general del main del directorio */
-
 /* --------- MAIN --------- */ 
 
 main {
@@ -210,21 +209,37 @@ main {
     padding: var(--space-lg) var(--space);
 }
 
-/* Hero Image */
+/* Hero Section */
 .hero {
+    position: relative;
     min-height: 60vh; 
-    background-image: url("../images/hero.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--bg);
     padding: 2rem;
+    overflow: hidden;
+}
+
+/* Contenedor de la imagen */
+.hero-image {
+    position: absolute;
+    inset: 0;            /* top:0; right:0; bottom:0; left:0; */
+    z-index: 0;
+}
+
+/* Imagen hero */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Hero Div */
 .hero-content {
+    position: relative;   /* para estar por encima de la imagen */
+    z-index: 1;
     max-width: 600px;
     background: rgba(0, 0, 0, 0.4);
     padding: 1.5rem;
@@ -239,6 +254,7 @@ main {
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
+
 
 /* Hero Button */
 .hero-button {
