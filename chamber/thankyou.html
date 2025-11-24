@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Franco">
+    <meta name="description" content="Thank you for applying to join the San José de Ancón Chamber of Commerce.">
+
+    <!-- Title -->
+    <title>San Jose de Ancón · Thank You</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/ancon-chamber-logo.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Reference -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile-join.css">
+    <link rel="stylesheet" href="styles/desktop-directory.css">
+
+    <!-- JS Reference-->
+     <script src="scripts/date.js" defer></script>
+     <script src="scripts/navigation.js" defer></script>
+     <script src="scripts/theme-toggle.js" defer></script>
+     <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand-header">
+            <img src="images/ancon-chamber-logo.ico" alt="Site logo" width="48" height="48">
+            <div class="title-header">
+                <span class="site-name-header">
+                    San Jose de Ancón
+                </span>
+                <span class="site-name-header">
+                    Chamber of Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="brand-header-2">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Activar modo oscuro">
+                <span class="theme-icon" aria-hidden="true"></span>
+            </button>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" aria-current="page">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section class="join-layout">
+            <section class="join-form-section">
+                <header class="join-header">
+                    <h1>Thank You for Your Application</h1>
+                    <p>We have received your membership application. Here is a summary of your submitted information:</p>
+                </header>
+
+                <section class="join-form submission-summary">
+                    <p><strong>First Name:</strong> <span id="out-firstName"></span></p>
+                    <p><strong>Last Name:</strong> <span id="out-lastName"></span></p>
+                    <p><strong>Email:</strong> <span id="out-email"></span></p>
+                    <p><strong>Mobile Phone:</strong> <span id="out-phone"></span></p>
+                    <p><strong>Business / Organization:</strong> <span id="out-organization"></span></p>
+                    <p><strong>Submitted At:</strong> <span id="out-timestamp"></span></p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="socials">
+            <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener">
+                <img src="images/github.svg" width="24" height="24" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" width="20" height="20" alt="linkedin">
+            </a>
+        </div>
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            ·
+            <span class="owner">Helaman Franco</span>
+            ·
+            <span class="location">Ecuador</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

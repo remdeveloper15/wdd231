@@ -36,6 +36,12 @@
     .members.grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+
+    .join-layout {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        align-items: flex-start;
+    }
+    
 }
 
 /* Opcional: ancho máximo un poco mayor en pantallas aún más grandes */
