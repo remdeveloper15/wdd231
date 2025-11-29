@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Franco">
+    <meta name="description" content="Discover San Jose de Ancón: attractions, culture, history, and local business opportunities for chamber members and visitors.">
+    
+    <!-- Title -->
+    <title>Discover | San Jose de Ancón Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/ancon-chamber-logo.ico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Discover | San Jose de Ancon Chamber of Commerce Web Site">
+    <meta property="og:description" content="Explore San Jose de Ancón: attractions, neighborhoods, culture, and opportunities for investors and visitors.">
+    <meta property="og:image" content="https://remdeveloper15.github.io/wdd231/chamber/images/ancon-chamber.png">
+    <meta property="og:url" content="https://remdeveloper15.github.io/wdd231/chamber/discover.html">
+
+    <!-- X Meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discover | San Jose de Ancon Chamber of Commerce Web Site">
+    <meta name="twitter:description" content="Discover the key places and opportunities in San Jose de Ancón.">
+    <meta name="twitter:image" content="https://remdeveloper15.github.io/wdd231/chamber/images/ancon-chamber.png">
+
+    <!-- CSS Reference -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Aquí sigues usando tu CSS base (el que me pegaste) -->
+    <link rel="stylesheet" href="styles/mobile-discover.css">
+    <link rel="stylesheet" href="styles/desktop-directory.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JS Reference-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/theme-toggle.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <!-- Discover usa módulo -->
+    <script type="module" src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="brand-header">
+            <img src="images/ancon-chamber-logo.ico" alt="Site logo" width="48" height="48">
+            <div class="title-header">
+                <span class="site-name-header">
+                    San Jose de Ancón
+                </span>
+                <span class="site-name-header">
+                    Chamber of Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="brand-header-2">
+            <!-- Botón modo claro/oscuro -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Activar modo oscuro">
+                <span class="theme-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Botón hamburguesa accesible en móviles -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="directory.html">
+                        Directory
+                    </a>
+                </li>
+                <li>
+                    <a href="join.html">
+                        Join
+                    </a>
+                </li>
+                <li>
+                    <a href="discover.html" aria-current="page" class="active">
+                        Discover
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN DISCOVER -->
+    <main class="discover-main">
+        <header class="discover-header">
+            <h1>Discover San Jose de Ancón</h1>
+            <p>
+                Learn more about the history, attractions, and opportunities that make San Jose de Ancón
+                a unique place to live, visit, and invest in.
+            </p>
+        </header>
+
+        <!-- Mensaje de visita (localStorage) -->
+        <section class="visitor-banner" aria-live="polite">
+            <p id="visit-message"></p>
+        </section>
+
+        <!-- Grid de lugares de interés (se rellena con JS usando JSON) -->
+        <section class="discover-grid" aria-label="Places of interest in San Jose de Ancón">
+            <!-- Cards generadas dinámicamente por discover.js -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="socials">
+            <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener"> 
+                <img src="images/github.svg" width="24" height="24" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" width="20" height="20" alt="linkedin">
+            </a>
+        </div>
+
+        <p>
+            &copy; 
+            <span id="current-year"></span> 
+                · 
+            <span class="owner">Helaman Franco</span> 
+                · 
+            <span class="location">Ecuador</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
