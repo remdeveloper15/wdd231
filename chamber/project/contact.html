@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Helaman Franco">
+  <meta name="description" content="Contact Helaman's Tech Repair to schedule laptop or printer maintenance.">
+
+  <title>Contact | Helaman's Tech Repair</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Helaman's Tech Repair">
+  <meta property="og:description" content="Send your information to receive help with your laptop or printer.">
+  <meta property="og:image" content="https://remdeveloper15.github.io/wdd231/images/favicon.ico">
+  <meta property="og:url" content="https://remdeveloper15.github.io/wdd231/project/contact.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+
+  <!-- JS -->
+  <script type="module" src="scripts/contact.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand-header">
+          <img src="images/favicon.ico" alt="Helaman's Tech Repair logo" width="44" height="44">
+          <div class="title-header">
+            <span class="site-name-main">Helaman's Tech Repair</span>
+            <span class="site-name-sub">Laptop &amp; Printer Maintenance Service</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+
+          <button id="menu-toggle" class="menu-toggle" aria-label="Open main navigation" aria-expanded="false" aria-controls="site-nav">
+            <div class="menu-icon">
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" aria-labelledby="contact-heading">
+        <div class="section-header">
+          <span class="section-kicker">Contact</span>
+          <h1 id="contact-heading" class="section-title">Tell me about your device</h1>
+          <p class="section-desc">
+            Fill this form and I will answer with simple, clear steps to help you with your laptop or printer.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <article class="contact-card">
+            <h2>How it works</h2>
+            <p>
+              After you send this form:
+            </p>
+            <ul class="feature-list">
+              <li>I read your message and review the details.</li>
+              <li>I contact you (WhatsApp, call, or email) to confirm the problem.</li>
+              <li>We agree on a time and place to check your device.</li>
+            </ul>
+
+            <p class="text-muted">
+              Please, describe the problem in your own words. Don’t worry if you are not “good with computers”.
+            </p>
+          </article>
+
+          <article class="form-card">
+            <h2>Contact form</h2>
+
+            <form method="get" action="thankyou.html">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="first-name">First name</label>
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    required
+                    autocomplete="given-name"
+                    title="Enter your first name"
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="last-name">Last name</label>
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    required
+                    autocomplete="family-name"
+                    title="Enter your last name"
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    title="Enter a valid email address"
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Mobile phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    autocomplete="tel"
+                    title="Enter your mobile phone number"
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="device-type">Device type</label>
+                  <select id="device-type" name="device-type" title="Select your main device">
+                    <option value="laptop">Laptop</option>
+                    <option value="printer">Printer</option>
+                    <option value="both">Both laptop and printer</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="preferred-contact">Preferred contact method</label>
+                  <select id="preferred-contact" name="preferred-contact" title="How do you prefer to be contacted?">
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="phone">Phone call</option>
+                    <option value="email">Email</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="message">Describe the problem</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    title="Explain the problem with your laptop or printer"
+                  ></textarea>
+                </div>
+
+                <div class="form-field">
+                  <button type="submit" class="btn btn-primary">
+                    Send request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            Helaman's Tech Repair · <span class="location">Santa Elena, Ecuador</span>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener">
+              <img src="images/github.svg" alt="GitHub" width="18" height="18" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener">
+              <img src="images/linkedin.svg" alt="LinkedIn" width="18" height="18" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <p>
+            &copy; <span id="current-year"></span> ·
+            <span class="owner">Helaman Franco</span> ·
+            <span class="location">Ecuador</span>
+          </p>
+          <p id="lastModified" class="text-muted"></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Helaman Franco">
+  <meta name="description" content="Fast and reliable laptop and printer maintenance in Santa Elena. Helaman's Tech Repair helps you fix slow computers, printer issues, and driver problems with professional support.">
+
+  <title>Home | Helaman's Tech Repair</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Helaman's Tech Repair | Laptop & Printer Maintenance Service">
+  <meta property="og:description" content="Fast and reliable laptop and printer maintenance in Santa Elena, Ecuador.">
+  <meta property="og:image" content="https://remdeveloper15.github.io/wdd231/images/favicon.ico">
+  <meta property="og:url" content="https://remdeveloper15.github.io/wdd231/project/index.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Helaman's Tech Repair | Laptop & Printer Maintenance Service">
+  <meta name="twitter:description" content="Fast and reliable laptop and printer maintenance in Santa Elena.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+
+  <!-- JS entry (ES module) -->
+  <script type="module" src="scripts/index.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER (con active en Home) -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand-header">
+          <img src="images/favicon.ico" alt="Helaman's Tech Repair logo" width="44" height="44">
+          <div class="title-header">
+            <span class="site-name-main">Helaman's Tech Repair</span>
+            <span class="site-name-sub">Laptop &amp; Printer Maintenance Service</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+
+          <button id="menu-toggle" class="menu-toggle" aria-label="Open main navigation" aria-expanded="false" aria-controls="site-nav">
+            <div class="menu-icon">
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-card">
+          <div class="hero-pill">
+            <span class="hero-pill-dot"></span>
+            Same-day support in Santa Elena
+          </div>
+
+          <h1 id="hero-heading">
+            Keep your <span class="hero-highlight">laptop &amp; printer</span> fast, clean and ready to work.
+          </h1>
+
+          <p>
+            Slow computer? Printer not working? I help you diagnose, clean, and optimize your devices,
+            so you can focus on work and study without tech problems.
+          </p>
+
+          <div class="hero-meta">
+            <span>💻 Laptops · 🖨️ Printers · 🌐 Drivers &amp; Wi-Fi</span>
+            <span>Trusted local service · Clear communication</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">
+              Book a maintenance
+            </a>
+            <a class="btn btn-outline" href="services.html">
+              View services
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/hero-tech.png" alt="Technician cleaning a laptop and a printer" loading="lazy">
+        </div>
+      </section>
+
+      <!-- SECCIÓN: PRINCIPALES PROBLEMAS -->
+      <section class="section" aria-labelledby="problems-heading">
+        <div class="section-header">
+          <span class="section-kicker">Common issues</span>
+          <h2 id="problems-heading" class="section-title">
+            I help you with the tech problems you see every day
+          </h2>
+          <p class="section-desc">
+            From slow startup to paper jams and driver errors, you don’t need to solve it alone.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card-tag">Laptops</span>
+            <h3>Slow or overheated laptop</h3>
+            <p>Cleaning dust, optimizing startup, checking storage and basic performance tuning.</p>
+            <p class="card-meta">Ideal for: students, remote workers, small businesses.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Printers</span>
+            <h3>Printer not printing correctly</h3>
+            <p>Driver installation, Wi-Fi connection, paper jam solutions, print quality issues.</p>
+            <p class="card-meta">Compatible with most home &amp; office printers.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Installation</span>
+            <h3>New device or driver setup</h3>
+            <p>Help installing drivers, configuring Wi-Fi, and connecting your devices correctly.</p>
+            <p class="card-meta">Perfect for families and small offices.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN: POR QUÉ CONTIGO -->
+      <section class="section" aria-labelledby="why-heading">
+        <div class="section-header">
+          <span class="section-kicker">Why Helaman</span>
+          <h2 id="why-heading" class="section-title">Clear, honest, and patient tech support</h2>
+          <p class="section-desc">
+            I explain what is happening with your device in simple words. No fear, no confusion — just solutions.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Transparent communication</h3>
+            <p>I explain what I will do with your laptop or printer before starting.</p>
+            <ul class="feature-list">
+              <li>No hidden actions</li>
+              <li>Clear expectations</li>
+              <li>Simple language</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Focus on reliability</h3>
+            <p>My goal is that your devices work every day, not just the first week.</p>
+            <ul class="feature-list">
+              <li>Preventive maintenance</li>
+              <li>Basic safety recommendations</li>
+              <li>Simple follow-up instructions</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Support for non-tech people</h3>
+            <p>Perfect if you don't feel comfortable with computers or printers.</p>
+            <ul class="feature-list">
+              <li>Patient explanations</li>
+              <li>Step-by-step guidance</li>
+              <li>WhatsApp friendly support</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            Helaman's Tech Repair · <span class="location">Santa Elena, Ecuador</span>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener">
+              <img src="images/github.svg" alt="GitHub" width="18" height="18" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener">
+              <img src="images/linkedin.svg" alt="LinkedIn" width="18" height="18" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <p>
+            &copy; <span id="current-year"></span> ·
+            <span class="owner">Helaman Franco</span> ·
+            <span class="location">Ecuador</span>
+          </p>
+          <p id="lastModified" class="text-muted"></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+  .header-inner {
+    padding-inline: 1.5rem;
+  }
+
+  .site-nav {
+    padding-bottom: 0.9rem;
+  }
+
+  .site-nav ul {
+    grid-auto-flow: column;
+    justify-content: flex-end;
+  }
+
+  main {
+    padding-inline: 1.5rem;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+    align-items: stretch;
+  }
+
+  .hero-card {
+    min-height: 320px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  }
+}

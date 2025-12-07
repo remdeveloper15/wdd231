@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Helaman Franco">
+  <meta name="description" content="Small store with basic accessories and tools for laptops and printers from Helaman's Tech Repair.">
+
+  <title>Store | Helaman's Tech Repair</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Store | Helaman's Tech Repair">
+  <meta property="og:description" content="Buy basic accessories for your laptop and printer.">
+  <meta property="og:image" content="https://remdeveloper15.github.io/wdd231/images/favicon.ico">
+  <meta property="og:url" content="https://remdeveloper15.github.io/wdd231/project/store.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+
+  <!-- JS -->
+  <script type="module" src="scripts/store.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand-header">
+          <img src="images/favicon.ico" alt="Helaman's Tech Repair logo" width="44" height="44">
+          <div class="title-header">
+            <span class="site-name-main">Helaman's Tech Repair</span>
+            <span class="site-name-sub">Laptop &amp; Printer Maintenance Service</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+
+          <button id="menu-toggle" class="menu-toggle" aria-label="Open main navigation" aria-expanded="false" aria-controls="site-nav">
+            <div class="menu-icon">
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="store.html" class="active" aria-current="page">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" aria-labelledby="store-heading">
+        <div class="section-header">
+          <span class="section-kicker">Accessories</span>
+          <h1 id="store-heading" class="section-title">Small store for useful accessories</h1>
+          <p class="section-desc">
+            Here you can see simple products that complement your laptop and printer: cables, mouse, pads, USB drives, and more.
+          </p>
+        </div>
+
+        <!-- Filtros básicos (luego podemos hacerlo dinámico) -->
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h2 style="margin-top: 0;">Filters</h2>
+          <p class="text-muted">In the final version we will connect these controls to JavaScript for filtering.</p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="filter-category">Category</label>
+              <select id="filter-category" name="category">
+                <option value="all">All</option>
+                <option value="laptop">Laptop</option>
+                <option value="printer">Printer</option>
+                <option value="accessory">Accessory</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="filter-price">Maximum price</label>
+              <select id="filter-price" name="price">
+                <option value="all">Any</option>
+                <option value="15">$15 or less</option>
+                <option value="30">$30 or less</option>
+                <option value="50">$50 or less</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de productos -->
+        <div class="grid-2" id="product-grid">
+          <!-- Más adelante: 15+ productos generados con JS desde JSON -->
+
+          <article class="card">
+            <div class="item-card-img">
+              <img src="images/store-mouse.jpg" alt="USB mouse" loading="lazy">
+            </div>
+            <span class="card-tag">Accessory</span>
+            <h2>Basic USB mouse</h2>
+            <p>Comfortable and simple mouse perfect for study and office tasks.</p>
+            <p class="price">$8.00</p>
+            <p class="text-muted">Compatible with most laptops and desktops.</p>
+          </article>
+
+          <article class="card">
+            <div class="item-card-img">
+              <img src="images/store-keyboard.jpg" alt="Compact keyboard" loading="lazy">
+            </div>
+            <span class="card-tag">Accessory</span>
+            <h2>Compact keyboard</h2>
+            <p>Lightweight keyboard with comfortable keys for long typing sessions.</p>
+            <p class="price">$15.00</p>
+            <p class="text-muted">Ideal for students and remote workers.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- MODAL PARA DETALLES DE PRODUCTO -->
+      <div id="product-modal-backdrop" class="modal-backdrop" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+          <button type="button" class="modal-close" aria-label="Close product details">
+            ✕
+          </button>
+          <div id="product-modal-content">
+            <!-- El contenido se llena con JS -->
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            Helaman's Tech Repair · <span class="location">Santa Elena, Ecuador</span>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/remdeveloper15" target="_blank" rel="noopener">
+              <img src="images/github.svg" alt="GitHub" width="18" height="18" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/helaman-franco-18986033a" target="_blank" rel="noopener">
+              <img src="images/linkedin.svg" alt="LinkedIn" width="18" height="18" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <p>
+            &copy; <span id="current-year"></span> ·
+            <span class="owner">Helaman Franco</span> ·
+            <span class="location">Ecuador</span>
+          </p>
+          <p id="lastModified" class="text-muted"></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

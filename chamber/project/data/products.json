@@ -1,0 +1,274 @@
+{
+  "products": [
+    {
+      "id": "mouse-basic",
+      "name": "Basic USB Mouse",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 8.0,
+      "image": "images/store-mouse.jpg",
+      "alt": "Basic USB mouse on a desk",
+      "shortDescription": "Simple and comfortable mouse for daily use.",
+      "suitableFor": "Perfect for study, office and casual use.",
+      "features": [
+        "Plug & play USB connection",
+        "Compatible with Windows and macOS",
+        "Ergonomic shape for small and medium hands"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "keyboard-compact",
+      "name": "Compact Keyboard",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 15.0,
+      "image": "images/store-keyboard.jpg",
+      "alt": "Compact black keyboard",
+      "shortDescription": "Lightweight keyboard with comfortable keys.",
+      "suitableFor": "Ideal for students and remote workers.",
+      "features": [
+        "Low-profile keys",
+        "Full layout with function keys",
+        "Quiet typing experience"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "mousepad-basic",
+      "name": "Basic Mouse Pad",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 5.0,
+      "image": "images/store-mousepad.jpg",
+      "alt": "Simple black mouse pad",
+      "shortDescription": "Soft mouse pad with smooth surface.",
+      "suitableFor": "Any mouse, any desk.",
+      "features": [
+        "Non-slip rubber base",
+        "Smooth fabric surface",
+        "Easy to clean"
+      ],
+      "inStock": true,
+      "recommended": false
+    },
+    {
+      "id": "usb-32gb",
+      "name": "32GB USB Drive",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 12.0,
+      "image": "images/store-usb.jpg",
+      "alt": "Small USB flash drive",
+      "shortDescription": "Portable storage for your files and school projects.",
+      "suitableFor": "Students, office documents, backups.",
+      "features": [
+        "32GB capacity",
+        "USB 3.0 compatible",
+        "Keyring-friendly design"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "usb-64gb",
+      "name": "64GB USB Drive",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 18.0,
+      "image": "images/store-usb-64.jpg",
+      "alt": "Silver USB flash drive",
+      "shortDescription": "Extra space for photos, videos and backups.",
+      "suitableFor": "Media files and large documents.",
+      "features": [
+        "64GB capacity",
+        "Fast read/write speeds",
+        "Metal housing"
+      ],
+      "inStock": true,
+      "recommended": false
+    },
+    {
+      "id": "hdmi-cable",
+      "name": "HDMI Cable 1.5m",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 10.0,
+      "image": "images/store-hdmi.jpg",
+      "alt": "HDMI cable rolled on a table",
+      "shortDescription": "Connect your laptop to monitors or TVs.",
+      "suitableFor": "Presentations, movies, extra screens.",
+      "features": [
+        "1.5m length",
+        "Full HD support",
+        "Durable connectors"
+      ],
+      "inStock": true,
+      "recommended": false
+    },
+    {
+      "id": "ethernet-cable",
+      "name": "Ethernet Cable 3m",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 9.0,
+      "image": "images/store-ethernet.jpg",
+      "alt": "Blue ethernet cable",
+      "shortDescription": "Stable wired connection for your PC or printer.",
+      "suitableFor": "Routers, printers, desktops.",
+      "features": [
+        "3m length",
+        "RJ45 connectors",
+        "Cat5e or higher"
+      ],
+      "inStock": true,
+      "recommended": false
+    },
+    {
+      "id": "cleaning-kit",
+      "name": "Screen & Keyboard Cleaning Kit",
+      "category": "laptop",
+      "categoryLabel": "Laptop",
+      "price": 11.0,
+      "image": "images/store-cleaning-kit.jpg",
+      "alt": "Cleaning kit with spray and cloth",
+      "shortDescription": "Keep your laptop screen and keyboard clean and clear.",
+      "suitableFor": "Laptops, monitors, and phones.",
+      "features": [
+        "Microfiber cloth included",
+        "Streak-free cleaner",
+        "Safe for most screens"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "cooling-pad",
+      "name": "Laptop Cooling Pad",
+      "category": "laptop",
+      "categoryLabel": "Laptop",
+      "price": 22.0,
+      "image": "images/store-cooling-pad.jpg",
+      "alt": "Laptop cooling pad with fans",
+      "shortDescription": "Helps reduce laptop temperature during long use.",
+      "suitableFor": "Gaming, study and heavy tasks.",
+      "features": [
+        "Multiple fans",
+        "USB powered",
+        "Adjustable height"
+      ],
+      "inStock": true,
+      "recommended": false
+    },
+    {
+      "id": "laptop-stand",
+      "name": "Aluminum Laptop Stand",
+      "category": "laptop",
+      "categoryLabel": "Laptop",
+      "price": 25.0,
+      "image": "images/store-laptop-stand.jpg",
+      "alt": "Aluminum laptop stand",
+      "shortDescription": "Elevates your laptop for better posture and airflow.",
+      "suitableFor": "Desks and study tables.",
+      "features": [
+        "Adjustable angle",
+        "Aluminum body",
+        "Anti-slip pads"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "printer-usb-cable",
+      "name": "Printer USB Cable",
+      "category": "printer",
+      "categoryLabel": "Printer",
+      "price": 7.0,
+      "image": "images/store-printer-usb.jpg",
+      "alt": "USB printer cable",
+      "shortDescription": "Connects your printer directly to your computer.",
+      "suitableFor": "Home and office printers.",
+      "features": [
+        "Standard USB-A to USB-B",
+        "1.5m length",
+        "Stable connection"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "paper-a4-pack",
+      "name": "A4 Paper Pack",
+      "category": "printer",
+      "categoryLabel": "Printer",
+      "price": 6.0,
+      "image": "images/store-paper.jpg",
+      "alt": "A stack of white A4 paper",
+      "shortDescription": "Basic white paper for everyday printing.",
+      "suitableFor": "Documents, school work, reports.",
+      "features": [
+        "A4 size",
+        "500 sheets (approx.)",
+        "Standard weight"
+      ],
+      "inStock": true,
+      "recommended": false
+    },
+    {
+      "id": "inkjet-refill",
+      "name": "Inkjet Refill Kit",
+      "category": "printer",
+      "categoryLabel": "Printer",
+      "price": 19.0,
+      "image": "images/store-ink-refill.jpg",
+      "alt": "Ink refill kit with bottles",
+      "shortDescription": "Refill kit for compatible inkjet printers.",
+      "suitableFor": "Users who print frequently.",
+      "features": [
+        "Black and color bottles",
+        "Includes basic gloves",
+        "Instructions included"
+      ],
+      "inStock": false,
+      "recommended": false
+    },
+    {
+      "id": "surge-protector",
+      "name": "Surge Protector Power Strip",
+      "category": "accessory",
+      "categoryLabel": "Accessory",
+      "price": 16.0,
+      "image": "images/store-surge.jpg",
+      "alt": "Power strip with multiple outlets",
+      "shortDescription": "Protect your laptop and printer from power spikes.",
+      "suitableFor": "Home offices and study corners.",
+      "features": [
+        "Multiple outlets",
+        "Surge protection indicator",
+        "Cable with good length"
+      ],
+      "inStock": true,
+      "recommended": true
+    },
+    {
+      "id": "wifi-usb-adapter",
+      "name": "USB Wi-Fi Adapter",
+      "category": "laptop",
+      "categoryLabel": "Laptop",
+      "price": 17.0,
+      "image": "images/store-wifi-adapter.jpg",
+      "alt": "Small USB Wi-Fi adapter",
+      "shortDescription": "Add or improve Wi-Fi on older laptops or desktops.",
+      "suitableFor": "PCs with weak or no Wi-Fi.",
+      "features": [
+        "Supports common Wi-Fi standards",
+        "Small form factor",
+        "Simple driver installation"
+      ],
+      "inStock": true,
+      "recommended": false
+    }
+  ]
+}
